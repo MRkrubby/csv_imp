@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>274</width>
+    <height>286</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QCheckBox" name="checkBoxP">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>145</y>
+     <width>118</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Peilbuizen apart</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxSonderingen">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>172</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sonderingen apart</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxVast">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>199</y>
+     <width>136</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Vaste punten apart</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxOverig">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>226</y>
+     <width>148</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Overige punten apart</string>
+   </property>
+  </widget>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>253</y>
+     <width>193</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxMB">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>118</y>
+     <width>172</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Machinale boringen apart</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelTitel">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>12</y>
+     <width>236</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Selecteer de gewenste exports:</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxOnderzoekspunten">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>37</y>
+     <width>193</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Onderzoekspunten algemeen</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxBoringen">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>64</y>
+     <width>111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Boringen apart</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="checkBoxHB">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>91</y>
+     <width>140</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Handboringen apart</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>Dialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>Dialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
